@@ -1,6 +1,6 @@
 /* Base styles */
 body {
-    font-family: 'Georgia', serif; /* Classic serif font */
+    font-family: 'Merriweather', serif; /* A refined serif font for a restaurant */
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* White background */
@@ -10,14 +10,15 @@ body {
 /* Header styles */
 .header {
     text-align: center;
-    padding: 1em 0;
-    background-color: #e0e0e0; /* Light gray background */
-    border-bottom: 2px solid #cccccc; /* Gray border */
+    padding: 1em 0; /* Adjusted padding */
+    background-color: #4a4a4a; /* Neutral dark gray background */
+    border-bottom: 2px solid #e0e0e0; /* Light gray border for contrast */
 }
 
 .menu-title {
-    font-size: 2.5em;
-    color: #333333; /* Matching text color */
+    font-size: 2.5em; /* Larger font size for the title */
+    font-family: 'Playfair Display', serif; /* A stylish serif font for the title */
+    color: #ffffff; /* White text color */
     margin: 0;
 }
 
@@ -25,71 +26,88 @@ body {
 .menu-categories {
     background-color: #f5f5f5; /* Very light gray background */
     padding: 10px;
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping of items */
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
 }
 
 .menu-categories ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically within the nav */
+    flex-wrap: nowrap; /* Prevents wrapping of items */
 }
 
 .menu-categories li {
-    margin-right: 20px;
+    margin-right: 20px; /* Space between items */
 }
 
 .menu-categories li:last-child {
-    margin-right: 0;
+    margin-right: 0; /* Removes margin from the last item */
 }
 
 .menu-categories a {
+    color: #333333; /* Neutral dark gray text for contrast */
     text-decoration: none;
-    color: #333333; /* Neutral dark gray */
-    font-weight: bold;
+    font-weight: bold; /* Makes text bold */
+    display: inline-block; /* Ensures links are displayed inline */
+    padding: 14px 20px; /* Adds padding for better spacing */
 }
 
 .menu-categories a:hover {
-    color: #000000; /* Slightly darker on hover */
+    text-decoration: underline; /* Adds underline on hover */
+    background-color: #e0e0e0; /* Light gray background on hover */
 }
 
-/* Menu content styles */
-.menu-content {
-    padding: 20px;
-}
-
+/* Menu section styles */
 .menu-section {
-    margin-bottom: 40px;
-}
-
-.menu-section h2 {
-    font-size: 1.8em;
-    border-bottom: 2px solid #cccccc; /* Gray border */
-    padding-bottom: 10px;
-    color: #333333; /* Neutral dark gray */
-}
-
-.menu-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
+    padding: 1em;
     border-bottom: 1px solid #e0e0e0; /* Light gray border */
 }
 
+.menu-section h2 {
+    font-size: 1.8em; /* Increased size for emphasis */
+    margin-bottom: 0.5em;
+    color: #4a4a4a; /* Neutral dark gray */
+    font-family: 'Lora', serif; /* Elegant serif font for headings */
+}
+
+/* Menu item box styles */
+.menu-item {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #cccccc; /* Light gray border for the box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fafafa; /* Off-white background for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
 .menu-item h3 {
+    margin: 0 0 0.5em;
     font-size: 1.2em;
     color: #333333; /* Neutral dark gray */
-    margin: 0;
+    font-family: 'Merriweather', serif; /* Refined serif font for item titles */
 }
 
 .menu-item p {
     margin: 0;
-    color: #666666; /* Slightly lighter gray for prices */
+    color: #666666; /* Medium gray text */
 }
 
-.menu-item:last-child {
-    border-bottom: none;
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .menu-title {
+        font-size: 2em; /* Adjusted font size for mobile view */
+    }
+
+    .menu-categories {
+        overflow-x: auto; /* Ensures horizontal scrolling is enabled */
+    }
+
+    .menu-categories ul {
+        flex-wrap: nowrap; /* Prevents wrapping of items on small screens */
+    }
 }
+    
