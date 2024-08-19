@@ -20,28 +20,38 @@ body {
     font-size: 2em;
 }
 
-/* Navigation styles */
+/* styles.css */
 .menu-categories {
-    background-color: #333;
+    background-color: #2a9d8f;
+    padding: 10px;
 }
 
 .menu-categories ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+    list-style-type: none;  /* Removes default bullets */
+    padding: 0;             /* Removes default padding */
+    margin: 0;              /* Removes default margin */
+    display: flex;          /* Aligns items horizontally */
+    justify-content: center; /* Centers items horizontally */
 }
 
 .menu-categories li {
-    padding: 10px 0;
+    margin-right: 20px;     /* Space between items */
+}
+
+.menu-categories li:last-child {
+    margin-right: 0;        /* Removes margin from the last item */
 }
 
 .menu-categories a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bold;      /* Optional: makes text bold */
 }
+
+.menu-categories a:hover {
+    text-decoration: underline; /* Optional: adds underline on hover */
+}
+
 
 /* Menu section styles */
 .menu-section {
