@@ -13,14 +13,30 @@ body {
     padding: 0.5em 0; /* Reduced padding */
     background-color: #000000; /* Black background */
     border-bottom: 2px solid #ffffff; /* White border for contrast */
+    position: relative; /* For positioning pseudo-elements */
 }
 
+.header::before {
+    content: ''; /* Empty content for pseudo-element */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Matches header background color */
+    z-index: -1; /* Positioned behind the image */
+}
+
+/* Make sure the header image blends with the background */
 .header img {
     width: auto; /* Maintain aspect ratio */
     max-width: 100%; /* Prevents image from exceeding container width */
-    height: 150px; /* Set a fixed height for the image */
-    object-fit: cover; /* Ensures the image covers the header area */
+    height: 100px; /* Set a fixed height for the image */
+    object-fit: contain; /* Ensures the image fits within the header area */
     border-bottom: 2px solid #ffffff; /* Matches border of header */
+    background-color: #000000; /* Match header background color */
+    padding: 10px; /* Add some padding to ensure it blends well */
 }
 
 /* Menu categories styles */
@@ -99,7 +115,7 @@ body {
 @media (max-width: 768px) {
     .header img {
         width: auto; /* Maintain aspect ratio */
-        height: 100px; /* Adjusted height for mobile view */
+        height: 80px; /* Adjusted height for mobile view */
     }
 
     .menu-categories {
