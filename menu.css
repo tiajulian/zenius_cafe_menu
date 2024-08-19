@@ -3,26 +3,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f2e6d4; /* Nude color */
     color: #333;
 }
 
 /* Header styles */
 .header {
-    background-color: #4CAF50;
-    color: white;
     text-align: center;
     padding: 1em 0;
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 2em;
+.header img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Menu categories styles */
 .menu-categories {
-    background-color: #2a9d8f;
+    background-color: #d8b4a6; /* Slightly darker nude color */
     padding: 10px;
     overflow-x: auto; /* Enables horizontal scrolling */
     white-space: nowrap; /* Prevents wrapping of items */
@@ -56,7 +54,7 @@ body {
 
 .menu-categories a:hover {
     text-decoration: underline; /* Adds underline on hover */
-    background-color: #777; /* Adds background color on hover */
+    background-color: #a57b73; /* Slightly darker background on hover */
 }
 
 /* Menu section styles */
@@ -88,8 +86,8 @@ body {
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
-    .header h1 {
-        font-size: 1.5em;
+    .header img {
+        width: 100%;
     }
 
     .menu-categories {
