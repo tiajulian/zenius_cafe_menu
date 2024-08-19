@@ -35,11 +35,11 @@ body {
     margin: 0;              /* Removes default margin */
     display: flex;          /* Aligns items horizontally */
     align-items: center;    /* Centers items vertically within the nav */
+    flex-wrap: nowrap;      /* Prevents wrapping of items */
 }
 
 .menu-categories li {
     margin-right: 20px;     /* Space between items */
-    display: inline-block;  /* Ensures items do not wrap */
 }
 
 .menu-categories li:last-child {
@@ -50,10 +50,13 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;      /* Makes text bold */
+    display: inline-block;  /* Ensures links are displayed inline */
+    padding: 14px 20px;     /* Adds padding for better spacing */
 }
 
 .menu-categories a:hover {
     text-decoration: underline; /* Adds underline on hover */
+    background-color: #777; /* Adds background color on hover */
 }
 
 /* Menu section styles */
@@ -90,7 +93,10 @@ body {
     }
 
     .menu-categories {
-        overflow-x: auto; /* Enables horizontal scrolling */
-        white-space: nowrap; /* Prevents wrapping of items */
+        overflow-x: auto; /* Ensures horizontal scrolling is enabled */
+    }
+
+    .menu-categories ul {
+        flex-wrap: nowrap; /* Prevents wrapping of items on small screens */
     }
 }
