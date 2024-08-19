@@ -16,8 +16,9 @@ body {
 }
 
 .header img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Ensure the image takes full width */
+    max-width: 100%; /* Prevents image from exceeding container width */
+    height: auto; /* Maintain aspect ratio */
     border-bottom: 2px solid #d8b4a6; /* Matches border of header */
 }
 
@@ -91,6 +92,7 @@ body {
 @media (max-width: 768px) {
     .header img {
         width: 100%;
+        height: auto; /* Maintain aspect ratio */
     }
 
     .menu-categories {
