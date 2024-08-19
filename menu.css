@@ -24,6 +24,8 @@ body {
 .menu-categories {
     background-color: #2a9d8f;
     padding: 10px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping of items */
 }
 
 .menu-categories ul {
@@ -31,11 +33,11 @@ body {
     padding: 0;             /* Removes default padding */
     margin: 0;              /* Removes default margin */
     display: flex;          /* Aligns items horizontally */
-    justify-content: center; /* Centers items horizontally */
 }
 
 .menu-categories li {
     margin-right: 20px;     /* Space between items */
+    display: inline-block;  /* Ensures items do not wrap */
 }
 
 .menu-categories li:last-child {
@@ -85,29 +87,8 @@ body {
         font-size: 1.5em;
     }
 
-    .menu-categories ul {
-        flex-direction: column; /* Stacks items vertically on small screens */
-        align-items: center;    /* Centers items horizontally in the column */
-    }
-
-    .menu-categories li {
-        margin-right: 0;  /* Removes right margin */
-        margin-bottom: 10px; /* Adds space between items vertically */
-        text-align: center; /* Centers text within the item */
-    }
-}
-
-/* Very small screens (e.g., phones in portrait mode) */
-@media (max-width: 480px) {
-    .header h1 {
-        font-size: 1.2em; /* Adjusts font size for very small screens */
-    }
-    
-    .menu-section {
-        padding: 0.5em; /* Reduces padding */
-    }
-
-    .menu-item h3 {
-        font-size: 1em; /* Adjusts font size for smaller screens */
+    .menu-categories {
+        overflow-x: auto; /* Enables horizontal scrolling */
+        white-space: nowrap; /* Prevents wrapping of items */
     }
 }
