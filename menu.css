@@ -3,28 +3,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2e6d4; /* Nude color */
-    color: #333;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
 }
 
 /* Header styles */
 .header {
     text-align: center;
     padding: 1em 0;
-    background-color: #f2e6d4; /* Matches the page background */
-    border-bottom: 2px solid #d8b4a6; /* Subtle border for better blending */
+    background-color: #000000; /* Black background */
+    border-bottom: 2px solid #ffffff; /* White border for contrast */
 }
 
 .header img {
     width: 100%; /* Ensure the image takes full width */
     max-width: 100%; /* Prevents image from exceeding container width */
     height: auto; /* Maintain aspect ratio */
-    border-bottom: 2px solid #d8b4a6; /* Matches border of header */
+    border-bottom: 2px solid #ffffff; /* Matches border of header */
 }
 
 /* Menu categories styles */
 .menu-categories {
-    background-color: #d8b4a6; /* Slightly darker nude color */
+    background-color: #000000; /* Black background */
     padding: 10px;
     overflow-x: auto; /* Enables horizontal scrolling */
     white-space: nowrap; /* Prevents wrapping of items */
@@ -32,45 +32,45 @@ body {
 }
 
 .menu-categories ul {
-    list-style-type: none;  /* Removes default bullets */
-    padding: 0;             /* Removes default padding */
-    margin: 0;              /* Removes default margin */
-    display: flex;          /* Aligns items horizontally */
-    align-items: center;    /* Centers items vertically within the nav */
-    flex-wrap: nowrap;      /* Prevents wrapping of items */
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically within the nav */
+    flex-wrap: nowrap; /* Prevents wrapping of items */
 }
 
 .menu-categories li {
-    margin-right: 20px;     /* Space between items */
+    margin-right: 20px; /* Space between items */
 }
 
 .menu-categories li:last-child {
-    margin-right: 0;        /* Removes margin from the last item */
+    margin-right: 0; /* Removes margin from the last item */
 }
 
 .menu-categories a {
-    color: #ffffff;         /* White text color for better contrast */
+    color: #ffffff; /* White text color for better contrast */
     text-decoration: none;
-    font-weight: bold;      /* Makes text bold */
-    display: inline-block;  /* Ensures links are displayed inline */
-    padding: 14px 20px;     /* Adds padding for better spacing */
+    font-weight: bold; /* Makes text bold */
+    display: inline-block; /* Ensures links are displayed inline */
+    padding: 14px 20px; /* Adds padding for better spacing */
 }
 
 .menu-categories a:hover {
     text-decoration: underline; /* Adds underline on hover */
-    background-color: #a57b73; /* Slightly darker background on hover */
+    background-color: #444444; /* Darker grey background on hover */
 }
 
 /* Menu section styles */
 .menu-section {
     padding: 1em;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #cccccc; /* Light grey border */
 }
 
 .menu-section h2 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    color: #4CAF50;
+    color: #000000; /* Black text */
 }
 
 .menu-item {
@@ -80,12 +80,12 @@ body {
 .menu-item h3 {
     margin: 0 0 0.5em;
     font-size: 1.2em;
-    color: #555;
+    color: #000000; /* Black text */
 }
 
 .menu-item p {
     margin: 0;
-    color: #777;
+    color: #666666; /* Medium grey text */
 }
 
 /* Mobile-specific styles */
