@@ -10,15 +10,16 @@ body {
 /* Header styles */
 .header {
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0; /* Reduced padding */
     background-color: #000000; /* Black background */
     border-bottom: 2px solid #ffffff; /* White border for contrast */
 }
 
 .header img {
-    width: 100%; /* Ensure the image takes full width */
+    width: auto; /* Maintain aspect ratio */
     max-width: 100%; /* Prevents image from exceeding container width */
-    height: auto; /* Maintain aspect ratio */
+    height: 150px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the header area */
     border-bottom: 2px solid #ffffff; /* Matches border of header */
 }
 
@@ -97,8 +98,8 @@ body {
 /* Mobile-specific styles */
 @media (max-width: 768px) {
     .header img {
-        width: 100%;
-        height: auto; /* Maintain aspect ratio */
+        width: auto; /* Maintain aspect ratio */
+        height: 100px; /* Adjusted height for mobile view */
     }
 
     .menu-categories {
