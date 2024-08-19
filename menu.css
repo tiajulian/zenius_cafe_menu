@@ -26,6 +26,7 @@ body {
     padding: 10px;
     overflow-x: auto; /* Enables horizontal scrolling */
     white-space: nowrap; /* Prevents wrapping of items */
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
 }
 
 .menu-categories ul {
@@ -33,6 +34,7 @@ body {
     padding: 0;             /* Removes default padding */
     margin: 0;              /* Removes default margin */
     display: flex;          /* Aligns items horizontally */
+    align-items: center;    /* Centers items vertically within the nav */
 }
 
 .menu-categories li {
