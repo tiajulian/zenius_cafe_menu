@@ -20,7 +20,7 @@ body {
     font-size: 2em;
 }
 
-/* styles.css */
+/* Menu categories styles */
 .menu-categories {
     background-color: #2a9d8f;
     padding: 10px;
@@ -45,13 +45,12 @@ body {
 .menu-categories a {
     color: white;
     text-decoration: none;
-    font-weight: bold;      /* Optional: makes text bold */
+    font-weight: bold;      /* Makes text bold */
 }
 
 .menu-categories a:hover {
-    text-decoration: underline; /* Optional: adds underline on hover */
+    text-decoration: underline; /* Adds underline on hover */
 }
-
 
 /* Menu section styles */
 .menu-section {
@@ -87,11 +86,28 @@ body {
     }
 
     .menu-categories ul {
-        flex-direction: column;
+        flex-direction: column; /* Stacks items vertically on small screens */
+        align-items: center;    /* Centers items horizontally in the column */
     }
 
     .menu-categories li {
-        text-align: center;
-        padding: 0.5em 0;
+        margin-right: 0;  /* Removes right margin */
+        margin-bottom: 10px; /* Adds space between items vertically */
+        text-align: center; /* Centers text within the item */
+    }
+}
+
+/* Very small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.2em; /* Adjusts font size for very small screens */
+    }
+    
+    .menu-section {
+        padding: 0.5em; /* Reduces padding */
+    }
+
+    .menu-item h3 {
+        font-size: 1em; /* Adjusts font size for smaller screens */
     }
 }
