@@ -73,8 +73,14 @@ body {
     color: #000000; /* Black text */
 }
 
+/* Menu item box styles */
 .menu-item {
     margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #dddddd; /* Light grey border for the box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light grey background for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .menu-item h3 {
