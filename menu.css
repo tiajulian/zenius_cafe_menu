@@ -1,110 +1,95 @@
 /* Base styles */
 body {
-    font-family: 'Georgia', serif; /* Changed font to Georgia for a classic look */
+    font-family: 'Georgia', serif; /* Classic serif font */
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* White background */
-    color: #000000; /* Black text */
+    color: #333333; /* Neutral dark gray for text */
 }
 
 /* Header styles */
 .header {
     text-align: center;
-    padding: 1em 0; /* Adjusted padding */
-    background-color: #8B4513; /* A rich brown color, suitable for a café */
-    border-bottom: 2px solid #ffffff; /* White border for contrast */
+    padding: 1em 0;
+    background-color: #e0e0e0; /* Light gray background */
+    border-bottom: 2px solid #cccccc; /* Gray border */
 }
 
 .menu-title {
-    font-size: 2.5em; /* Larger font size for the title */
-    font-family: 'Berkshire Swash', cursive; /* A more stylized font for the title */
-    color: #ffffff; /* White text color */
+    font-size: 2.5em;
+    color: #333333; /* Matching text color */
     margin: 0;
 }
 
 /* Menu categories styles */
 .menu-categories {
-    background-color: #000000; /* Black background */
+    background-color: #f5f5f5; /* Very light gray background */
     padding: 10px;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    white-space: nowrap; /* Prevents wrapping of items */
-    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .menu-categories ul {
-    list-style-type: none; /* Removes default bullets */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    display: flex; /* Aligns items horizontally */
-    align-items: center; /* Centers items vertically within the nav */
-    flex-wrap: nowrap; /* Prevents wrapping of items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .menu-categories li {
-    margin-right: 20px; /* Space between items */
+    margin-right: 20px;
 }
 
 .menu-categories li:last-child {
-    margin-right: 0; /* Removes margin from the last item */
+    margin-right: 0;
 }
 
 .menu-categories a {
-    color: #ffffff; /* White text color for better contrast */
     text-decoration: none;
-    font-weight: bold; /* Makes text bold */
-    display: inline-block; /* Ensures links are displayed inline */
-    padding: 14px 20px; /* Adds padding for better spacing */
+    color: #333333; /* Neutral dark gray */
+    font-weight: bold;
 }
 
 .menu-categories a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-    background-color: #444444; /* Darker grey background on hover */
+    color: #000000; /* Slightly darker on hover */
 }
 
-/* Menu section styles */
+/* Menu content styles */
+.menu-content {
+    padding: 20px;
+}
+
 .menu-section {
-    padding: 1em;
-    border-bottom: 1px solid #cccccc; /* Light grey border */
+    margin-bottom: 40px;
 }
 
 .menu-section h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    color: #8B4513; /* Matching the header color for section titles */
+    font-size: 1.8em;
+    border-bottom: 2px solid #cccccc; /* Gray border */
+    padding-bottom: 10px;
+    color: #333333; /* Neutral dark gray */
 }
 
-/* Menu item box styles */
 .menu-item {
-    margin-bottom: 1em;
-    padding: 1em;
-    border: 1px solid #dddddd; /* Light grey border for the box */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light grey background for the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0; /* Light gray border */
 }
 
 .menu-item h3 {
-    margin: 0 0 0.5em;
     font-size: 1.2em;
-    color: #000000; /* Black text */
+    color: #333333; /* Neutral dark gray */
+    margin: 0;
 }
 
 .menu-item p {
     margin: 0;
-    color: #666666; /* Medium grey text */
+    color: #666666; /* Slightly lighter gray for prices */
 }
 
-/* Mobile-specific styles */
-@media (max-width: 768px) {
-    .menu-title {
-        font-size: 2em; /* Adjusted font size for mobile view */
-    }
-
-    .menu-categories {
-        overflow-x: auto; /* Ensures horizontal scrolling is enabled */
-    }
-
-    .menu-categories ul {
-        flex-wrap: nowrap; /* Prevents wrapping of items on small screens */
-    }
+.menu-item:last-child {
+    border-bottom: none;
 }
