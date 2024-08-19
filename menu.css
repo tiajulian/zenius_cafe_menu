@@ -11,11 +11,14 @@ body {
 .header {
     text-align: center;
     padding: 1em 0;
+    background-color: #f2e6d4; /* Matches the page background */
+    border-bottom: 2px solid #d8b4a6; /* Subtle border for better blending */
 }
 
 .header img {
     max-width: 100%;
     height: auto;
+    border-bottom: 2px solid #d8b4a6; /* Matches border of header */
 }
 
 /* Menu categories styles */
@@ -45,7 +48,7 @@ body {
 }
 
 .menu-categories a {
-    color: white;
+    color: #ffffff;         /* White text color for better contrast */
     text-decoration: none;
     font-weight: bold;      /* Makes text bold */
     display: inline-block;  /* Ensures links are displayed inline */
