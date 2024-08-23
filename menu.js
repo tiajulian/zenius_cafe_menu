@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Fetch and display menu items
     fetch('menu.json')
         .then(response => response.json())
         .then(data => {
@@ -41,6 +42,23 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
         .catch(error => console.error('Error fetching the menu:', error));
+
+    // Show the pop-up message on page load
+    const popup = document.getElementById('popup-message');
+    const closeBtn = document.querySelector('.close-btn');
+
+    // Show the popup
+    popup.classList.add('show');
+
+    closeBtn.onclick = function() {
+        popup.classList.remove('show');
+    }
+
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.classList.remove('show');
+        }
+    }
 });
 
 function capitalizeFirstLetter(string) {
