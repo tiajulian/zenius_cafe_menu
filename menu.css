@@ -1,132 +1,53 @@
-/* Base styles */
-body {
-    font-family: 'Merriweather', serif; /* A refined serif font for a restaurant */
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* White background */
-    color: #333333; /* Neutral dark gray for text */
-}
-
-.sides-button-container {
-    text-align: center;
-    margin: 20px;
-}
-
-.sides-button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-
-/* Header styles */
-.header {
-    text-align: center;
-    padding: 1em 0; /* Adjusted padding */
-    background-color: #4a4a4a; /* Neutral dark gray background */
-    border-bottom: 2px solid #e0e0e0; /* Light gray border for contrast */
-}
-
-.menu-title {
-    font-size: 2.5em; /* Larger font size for the title */
-    font-family: 'Playfair Display', serif; /* A stylish serif font for the title */
-    color: #ffffff; /* White text color */
-    margin: 0;
-}
-
-/* Menu categories styles */
-.menu-categories {
-    background-color: #f5f5f5; /* Very light gray background */
-    padding: 10px;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    white-space: nowrap; /* Prevents wrapping of items */
-    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
-}
-
-.menu-categories ul {
-    list-style-type: none; /* Removes default bullets */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    display: flex; /* Aligns items horizontally */
-    align-items: center; /* Centers items vertically within the nav */
-    flex-wrap: nowrap; /* Prevents wrapping of items */
-}
-
-.menu-categories li {
-    margin-right: 20px; /* Space between items */
-}
-
-.menu-categories li:last-child {
-    margin-right: 0; /* Removes margin from the last item */
-}
-
-.menu-categories a {
-    color: #333333; /* Neutral dark gray text for contrast */
-    text-decoration: none;
-    font-weight: bold; /* Makes text bold */
-    display: inline-block; /* Ensures links are displayed inline */
-    padding: 14px 20px; /* Adds padding for better spacing */
-}
-
-.menu-categories a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-    background-color: #e0e0e0; /* Light gray background on hover */
-}
-
-/* Menu section styles */
-.menu-section {
-    padding: 1em;
-    border-bottom: 1px solid #e0e0e0; /* Light gray border */
-}
-
-.menu-section h2 {
-    font-size: 1.8em; /* Increased size for emphasis */
-    margin-bottom: 0.5em;
-    color: #4a4a4a; /* Neutral dark gray */
-    font-family: 'Lora', serif; /* Elegant serif font for headings */
-}
-
-/* Menu item box styles */
-.menu-item {
-    margin-bottom: 1em;
-    padding: 1em;
-    border: 1px solid #cccccc; /* Light gray border for the box */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #fafafa; /* Off-white background for the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.menu-item h3 {
-    margin: 0 0 0.5em;
-    font-size: 1.2em;
-    color: #333333; /* Neutral dark gray */
-    font-family: 'Merriweather', serif; /* Refined serif font for item titles */
-}
-
-.menu-item p {
-    margin: 0;
-    color: #666666; /* Medium gray text */
-}
-
-/* Mobile-specific styles */
-@media (max-width: 768px) {
-    .menu-title {
-        font-size: 2em; /* Adjusted font size for mobile view */
-    }
-
-    .menu-categories {
-        overflow-x: auto; /* Ensures horizontal scrolling is enabled */
-    }
-
-    .menu-categories ul {
-        flex-wrap: nowrap; /* Prevents wrapping of items on small screens */
-    }
+{
+    "coffee-hot-drinks": [
+        {"name": "BLACK", "price": "$4.5/$5"},
+        {"name": "WHITE", "price": "$4.5/$5"},
+        {"name": "HOT CHOCOLATE", "price": "$4.5/$5"},
+        {"name": "CHAI", "price": "$4.5/$5"},
+        {"name": "DIRTY CHAI", "price": "$5/$5.5"},
+        {"name": "MOCHA", "price": "$5/$5.5"},
+        {"name": "STICKY CHAI ON SOY", "price": "$6.00"},
+        {"name": "TARO LATTE", "price": "$6.00"},
+        {"name": "RED VELVET LATTE", "price": "$6.00"},
+        {"name": "TURMERIC LATTE", "price": "$6.00"},
+        {"name": "AFFOGATO", "price": "$6.00"}
+    ],
+    "tea": [
+        {"name": "EARL GREY", "price": "$4.5"},
+        {"name": "ENGLISH BREAKFAST", "price": "$4.5"},
+        {"name": "GREEN", "price": "$4.5"},
+        {"name": "PEPPERMINT", "price": "$4.5"},
+        {"name": "CHAMOMILE", "price": "$4.5"},
+        {"name": "LEMONGRASS GINGER", "price": "$4.5"},
+        {"name": "PURE MATCHA", "price": "Available sweet/not sweet as u\nHOT\nICED\n$6"},
+        {"name": "STRAWBERRY MATCHA", "price": "HOT $6\nICED $7\n$12"}
+    ],
+    "iced": [
+        {"name": "COLD BREW", "price": "$6.0"},
+        {"name": "ICE LATTE", "price": "$6.0"},
+        {"name": "ICE LONG BLACK", "price": "$6.0"},
+        {"name": "ICE MOCHA", "price": "$7.0"},
+        {"name": "ICE CHOCOLATE", "price": "$7.0"},
+        {"name": "ICE CHAI", "price": "$7.0"},
+        {"name": "ICE TARO", "price": "$7.0"}
+    ],
+    "milkshake": [
+        {"name": "CHOCOLATE", "price": "$6.5"},
+        {"name": "STRAWBERRY", "price": "$6.5"},
+        {"name": "CARAMEL", "price": "$6.5"},
+        {"name": "PEANUT BUTTER", "price": "$6.5"},
+        {"name": "NUTELLA", "price": "$6.5"}
+    ],
+    "fresh-juice": [
+        {"name": "IMMUNITY", "price": "$8", "description": "(ORANGE, CARROT, APPLE, GINGER)"},
+        {"name": "DETOX", "price": "$8", "description": "(APPLE, CELERY, CUCUMBER, KALE, GINGER)"},
+        {"name": "LIVER SCRUBBER", "price": "$8", "description": "(BEETROOT, APPLE, CARROT, LEMON)"}
+    ],
+    "smoothie": [
+        {"name": "BANANA", "price": "$9"},
+        {"name": "MIX BERRIES", "price": "$9"}
+    ],
+    "sodas": [
+        {"name": "STRAWBERRY WATERMELON", "price": "$8"}
+    ]
 }
