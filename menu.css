@@ -112,7 +112,7 @@ body {
 
 /* Pop-up styles */
 .popup-message {
-    display: flex;
+    display: none; /* Hidden by default */
     position: fixed;
     top: 0;
     left: 0;
@@ -121,30 +121,26 @@ body {
     background: rgba(0, 0, 0, 0.6);
     align-items: center;
     justify-content: center;
-    z-index: 2000; /* Ensure it's on top of other content */
+    z-index: 2000;
+}
+
+.popup-message.show {
+    display: flex; /* Shows the pop-up */
 }
 
 .popup-content {
-    background: #ffffff; /* White background for the content */
+    background: #ffffff;
     padding: 30px;
-    border-radius: 12px; /* Rounded corners for a softer look */
+    border-radius: 12px;
     width: 90%;
-    max-width: 600px; /* Maximum width for larger screens */
+    max-width: 600px;
     position: relative;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     text-align: center;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition effects */
-    transform: scale(0.9); /* Initial scale for entrance effect */
-    opacity: 0; /* Initial opacity for entrance effect */
-}
-
-.popup-message.show .popup-content {
-    transform: scale(1); /* Full scale when visible */
-    opacity: 1; /* Full opacity when visible */
 }
 
 .close-btn {
-    background: #ff4d4d; /* Red background for visibility */
+    background: #ff4d4d;
     color: white;
     border: none;
     padding: 12px;
@@ -152,13 +148,13 @@ body {
     position: absolute;
     top: 15px;
     right: 15px;
-    border-radius: 50%; /* Circular button */
-    font-size: 1.2em; /* Larger font size for better visibility */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    border-radius: 50%;
+    font-size: 1.2em;
 }
 
-.close-btn:hover {
-    background: #cc0000; /* Darker red on hover */
+/* Darken navbar when popup is active */
+.body-popup-active .menu-categories {
+    background-color: #d7ccc8; /* Darker greyish background */
 }
 
 /* Mobile-specific styles */
