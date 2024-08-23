@@ -1,25 +1,190 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById('popup-message');
-    const closeBtn = document.querySelector('.close-btn');
-    const body = document.body;
 
-    // Show the popup
-    popup.classList.add('show');
-    body.classList.add('body-popup-active');
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-    if (closeBtn) {
-        closeBtn.onclick = function() {
-            popup.classList.remove('show');
-            body.classList.remove('body-popup-active');
-        };
-    } else {
-        console.error('Close button not found');
+/* Base styles */
+body {
+    font-family: 'Montserrat', sans-serif; /* Modern, clean font for the entire site */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Neutral dark gray for text */
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 1em 0; /* Adjusted padding for better spacing */
+    background-color: #ffebee; /* Very light pink background */
+    border-bottom: 2px solid #ffcdd2; /* Slightly darker pink border for contrast */
+}
+
+.menu-title {
+    font-size: 2em; /* Adjusted font size for the title */
+    color: #bf360c; /* Darker orange text color */
+    margin: 0;
+}
+
+/* Menu categories styles */
+.menu-categories {
+    position: sticky;
+    top: 0;
+    background-color: #fff3e0;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1000;
+    border-bottom: 1px solid #ffcdd2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Ensure transition is applied */
+}
+
+/* Darken navbar when popup is active */
+.body-popup-active .menu-categories {
+    background-color: #d7ccc8; /* Darker greyish background */
+}
+
+.menu-categories ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically within the nav */
+}
+
+.menu-categories li {
+    margin-right: 15px; /* Space between items */
+}
+
+.menu-categories li:last-child {
+    margin-right: 0; /* Removes margin from the last item */
+}
+
+.menu-categories a {
+    color: #bf360c; /* Darker orange text for contrast */
+    text-decoration: none;
+    font-weight: bold; /* Makes text bold */
+    display: inline-block; /* Ensures links are displayed inline */
+    padding: 10px 15px; /* Padding for better touch targets */
+}
+
+.menu-categories a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    background-color: #ffccbc; /* Light orange background on hover */
+}
+
+/* Menu section styles */
+.menu-section {
+    padding: 1em; /* Adjusted padding for better spacing */
+    border-bottom: 1px solid #ffcdd2; /* Light orange border */
+}
+
+.menu-section h2 {
+    font-size: 1.6em; /* Adjusted font size for headings */
+    margin-bottom: 0.5em;
+    color: #bf360c; /* Darker orange */
+}
+
+/* Menu item box styles */
+.menu-item {
+    margin-bottom: 1em; /* Space between items */
+    padding: 1em; /* Padding for better spacing */
+    border: 1px solid #ffccbc; /* Light orange border for the box */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffe0b2; /* Very light orange background for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.menu-item h3 {
+    margin: 0 0 0.5em;
+    font-size: 1.2em; /* Adjusted font size for item titles */
+    color: #bf360c; /* Darker orange text */
+}
+
+.menu-item p {
+    margin: 0;
+    color: #666666; /* Medium gray text */
+}
+
+.menu-item .price {
+    font-weight: bold; /* Makes the price bold */
+}
+
+/* Pop-up styles */
+.popup-message {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    z-index: 2000; /* Ensure it's on top of other content */
+}
+
+.popup-message .popup-content {
+    background: #ffffff; /* White background for the content */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners for a softer look */
+    width: 90%;
+    max-width: 600px; /* Maximum width for larger screens */
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition effects */
+    transform: scale(0.9); /* Initial scale for entrance effect */
+    opacity: 0; /* Initial opacity for entrance effect */
+}
+
+.popup-message.show .popup-content {
+    transform: scale(1); /* Full scale when visible */
+    opacity: 1; /* Full opacity when visible */
+}
+
+.close-btn {
+    background: #ff4d4d; /* Red background for visibility */
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%; /* Circular button */
+    font-size: 1.2em; /* Larger font size for better visibility */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.close-btn:hover {
+    background: #cc0000; /* Darker red on hover */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .popup-message .popup-content {
+        width: 95%; /* Slightly larger width on mobile */
     }
 
-    window.onclick = function(event) {
-        if (event.target === popup) {
-            popup.classList.remove('show');
-            body.classList.remove('body-popup-active');
-        }
-    };
-});
+    .menu-title {
+        font-size: 1.6em; /* Adjusted font size for mobile view */
+    }
+
+    .menu-categories {
+        padding: 8px; /* Adjusted padding for mobile */
+    }
+
+    .menu-categories a {
+        padding: 8px 12px; /* Adjusted padding for mobile */
+    }
+
+    .menu-section h2 {
+        font-size: 1.4em; /* Adjusted font size for headings on mobile */
+    }
+
+    .menu-item h3 {
+        font-size: 1em; /* Adjusted font size for item titles on mobile */
+    }
+}
