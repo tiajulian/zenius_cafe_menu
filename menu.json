@@ -6,11 +6,6 @@
             "price": "$5.90"
         },
         {
-            "name": "THE SECRET CORN",
-            "description": "House Sweet Corn Mix Haloumi Fritters, Avocado, Poached Egg, Tomato Salsa & Green Goddess Dressing. Add side of Crispy Bacon $4.50.",
-            "price": "$21.90"
-        },
-        {
             "name": "SAY HALOU-MI",
             "description": "On Turkish bread, Haloumi, Egg, Avocado, Caramelized Onions, Spinach, Hashbrown, House-made sauce.",
             "price": "$16.90"
@@ -21,45 +16,21 @@
             "price": "$16.90"
         },
         {
-            "name": "I’M STARVING",
-            "description": "2 Eggs of your choice, Sauteed Kale, Grilled Tomato, Mushrooms, Avocado, Chorizo, Crispy Bacon, & Hashbrown with Sourdough.",
-            "price": "26.90"
-        },
-        {
-            "name": "BEST FRICKEN SANDWICH",
-            "description": "Buttermilk Fried Chicken, Pickles, Coleslaw, Jack Cheese, Sriracha Hollandaise Sauce. Add Fries $3.",
-            "price": "$26.90"
-        },
-        {
             "name": "ACAI BOWL",
             "description": "House-made Granola with Seasonal Fruits, Banana, Chia Seeds, and Coconut Flakes.",
             "price": "$19.90"
         },
         {
-            "name": "BEEF RENDANG",
-            "description": "House Slow Cooked Beef with Indo Spices, Broccoli, Pickled Cucumber, Onion & Chilli, Fried Egg, Crispy Shallot, Brown Rice.",
-            "price": "$23.90"
-        },
-        {
             "name": "AVO SMASH",
             "description": "Avocado on Toast with Goat Feta, 2 Poached Eggs, Tomato Salsa, Dukkah, Sumac, Olive Oil. Add Crispy Bacon $4.50 or Hashbrown $3.50.",
-            "price": "$23.90"
-        },
-        {
-            "name": "EGGS BENEDICT",
-            "description": "Seasoned Pulled Beef, Sauteed Spinach, 2 Poached Eggs, Crispy Shallots, House Sriracha Hollandaise on Brioche.",
             "price": "$19.90"
         },
-        {
-            "name": "CAULIFLOWER BOWL",
-            "description": "Fried Cauliflower, Quinoa, Almond, Pomegranate, Currant, Crispy Kale, Cumin Dressing, Beetroot Hummus, Avocado. Add Grilled Salmon $6.50 or Grilled Chicken $5.50.",
+         {
+            "name": "EGGS BENEDICT",
+            "description": "Seasoned Pulled Beef, Sauteed Spinach, 2 Poached Eggs, Crispy Shallots, House Sriracha Hollandaise on Brioche.",
             "price": "$23.90"
         },
-        {
-            "name": "SOBA SALMON BOWL",
-            "description": "Cold Soba Noodles with Sesame Dressing, Pickled Cucumber, Soy Beansprout, Avocado, Edamame, Bonito Flakes, and Ponzu Grilled Salmon.",
-            "price": "$21.90"
-        },
+
         {
             "name": "CHILLY BILLY",
             "description": "Soft Scrambled Eggs with Zenius Chilli Sambal, Mixed Mushrooms, Goat Feta, Crispy Shallots, and Roti Paratha.",
@@ -70,6 +41,43 @@
             "description": "Pandan Pancake, Banana, Seasonal Fruits, Roasted Pistachio, Maple Syrup, and Rainbow Ice Cream.",
             "price": "$22.90"
         },
+        
+        {
+            "name": "THE SECRET CORN",
+            "description": "House Sweet Corn Mix Haloumi Fritters, Avocado, Poached Egg, Tomato Salsa & Green Goddess Dressing. Add side of Crispy Bacon $4.50.",
+            "price": "$21.90"
+        },
+
+        {
+            "name": "I’M STARVING",
+            "description": "2 Eggs of your choice, Sauteed Kale, Grilled Tomato, Mushrooms, Avocado, Chorizo, Crispy Bacon, & Hashbrown with Sourdough.",
+            "price": "$26.90"
+        },
+        {
+            "name": "BEST FRICKEN SANDWICH",
+            "description": "Buttermilk Fried Chicken, Pickles, Coleslaw, Jack Cheese, Sriracha Hollandaise Sauce. Add Fries $3.",
+            "price": "$21.90"
+        },
+
+        {
+            "name": "BEEF RENDANG",
+            "description": "House Slow Cooked Beef with Indo Spices, Broccoli, Pickled Cucumber, Onion & Chilli, Fried Egg, Crispy Shallot, Brown Rice.",
+            "price": "$23.90"
+        },
+
+
+        {
+            "name": "CAULIFLOWER BOWL",
+            "description": "Fried Cauliflower, Quinoa, Almond, Pomegranate, Currant, Crispy Kale, Cumin Dressing, Beetroot Hummus, Avocado. Add Grilled Salmon $6.50 or Grilled Chicken $5.50.",
+            "price": "$23.90"
+        },
+        {
+            "name": "SOBA SALMON BOWL",
+            "description": "Cold Soba Noodles with Sesame Dressing, Pickled Cucumber, Soy Beansprout, Avocado, Edamame, Bonito Flakes, and Ponzu Grilled Salmon.",
+            "price": "$24.90"
+        },
+
+
         {
             "name": "GREEN BOWL",
             "description": "Sauteed Quinoa, Red Onion, Broccoli, Asparagus, Kale, Labneh, Poached Egg, House Spiced Almond Nuts, Edamame. Add Grilled Salmon or Grilled Chicken $5.50.",
