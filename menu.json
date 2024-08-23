@@ -66,5 +66,23 @@
     ],
     "sodas": [
         {"name": "STRAWBERRY WATERMELON", "price": "$8"}
+    ],
+    "sides": [
+        {"name": "Mix Mushrooms", "price": "$4.5"},
+        {"name": "Goat Feta", "price": "$4.5"},
+        {"name": "Chorizo", "price": "$4.5"},
+        {"name": "Bacon", "price": "$4.5"},
+        {"name": "Avocado", "price": "$4.5"},
+        {"name": "Halloumi", "price": "$4.5"},
+        {"name": "Egg", "price": "$3.5"},
+        {"name": "Cheese", "price": "$3.5"},
+        {"name": "Grilled Tomato", "price": "$3.5"},
+        {"name": "Wilted Spinach", "price": "$3.5"},
+        {"name": "Hashbrown", "price": "$3.5"},
+        {"name": "Grilled Salmon", "price": "$7"},
+        {"name": "Grilled Chicken", "price": "$7"},
+        {"name": "Seasoned Fried Chicken", "price": "$7"},
+        {"name": "Fries with Herbs", "price": "$7"},
+        {"name": "Sweet Potato Fries", "price": "$9"}
     ]
 }
