@@ -124,23 +124,32 @@ body {
     z-index: 2000; /* Make sure it’s above other content */
 }
 
-.popup-message .popup-content {
+.popup-content {
     background: white;
     padding: 20px;
     border-radius: 5px;
     width: 90%;
     max-width: 500px; /* Adjust maximum width as needed */
+    position: relative; /* Relative positioning for close button */
 }
 
 .close-btn {
-    background: red;
+    background: #bf360c; /* Darker orange background for button */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px; /* Increased padding for better touch targets */
     cursor: pointer;
     position: absolute; /* Position the button within the popup */
     top: 10px;
     right: 10px;
+    border-radius: 50%; /* Make the button circular */
+    font-size: 1.2em; /* Increase font size */
+    line-height: 1; /* Adjust line height */
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.close-btn:hover {
+    background: #d32f2f; /* Darker red on hover */
 }
 
 /* Body Styling When Popup is Active */
