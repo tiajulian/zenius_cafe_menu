@@ -5,22 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function closePopup() {
         popup.classList.remove('show'); // Hides the pop-up
-        body.classList.remove('body-popup-active'); // Reverts the body's active state
+        body.classList.remove('body-popup-active'); // Resets the body class
     }
 
     // Show the popup
     popup.classList.add('show'); // Displays the pop-up
-    body.classList.add('body-popup-active'); // Adds the active state to the body
+    body.classList.add('body-popup-active'); // Applies a class to the body
 
     if (closeBtn) {
-        closeBtn.onclick = closePopup;
+        closeBtn.onclick = closePopup; // Closes the pop-up on button click
     } else {
         console.error('Close button not found');
     }
 
     window.onclick = function(event) {
         if (event.target === popup) {
-            closePopup();
+            closePopup(); // Closes the pop-up if clicking outside of it
         }
     };
 });
