@@ -117,6 +117,11 @@
         {"name": "PURE MATCHA", "description": "Available sweet or not sweet. HOT/ICED", "price": "$6"},
         {"name": "STRAWBERRY MATCHA", "description": "HOT $6, ICED $7", "price": "$12"}
     ],
+    "pure-matcha": [
+        {"name": "HOT", "description": "Available sweet/not sweet", "price": "$6"},
+        {"name": "ICED", "description": "Available sweet/not sweet", "price": "7"},
+        {"name": "STRAWBERRY MATCHA", "description": "Available sweet/not sweet", "price": "$12"},
+    ],
     "iced": [
         {"name": "COLD BREW", "description": null, "price": "$6.0"},
         {"name": "ICE LATTE", "description": null, "price": "$6.0"},
@@ -135,6 +140,16 @@
     ],
     "fresh-juice": [
         {"name": "IMMUNITY", "description": "Orange, Carrot, Apple, Ginger", "price": "$8"},
-        {"name": "DETOX", "description": "Cucumber, Celery, Apple, Lemon, Ginger", "price": "$8"}
+        {"name": "DETOX", "description": "Cucumber, Celery, Apple, Lemon, Ginger", "price": "$8"},
+        {"name": "LIVER SCRUBBER", "description": "BEETROOT, APPLE, CARROT, LEMON", "price": "$8"}
+    ],
+    "sodas": [
+        {"name": "STRAWBERRY WATERMELON", "description": null, "price": "$8"}
+    ],
+    "smoothie": [
+        {"name": "BANANA", "description": null, "price": "$9"},
+        {"name": "MIX BERRIES", "description": null, "price": "$9"}
+        
     ]
+    
 }
