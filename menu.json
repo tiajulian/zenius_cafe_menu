@@ -1,4 +1,21 @@
 {
+    "food": [
+        {"name": "TOAST", "price": "$5.9", "description": "Sourdough / Multigrain / Turkish / Gluten free / Choice of Spread (Strawberry Jam, Peanut Butter, Nutella, Vegemite)"},
+        {"name": "THE SECRET CORN", "price": "$21.9", "description": "House Sweet Corn Mix Haloumi Fritters, Avocado, Poached Egg, Tomato Salsa & Green Goddess Dressing\nAdd side of Crispy Bacon $4.5"},
+        {"name": "SAY HALOU-MI", "price": "$16.9", "description": "On Turkish, Haloumi, Egg, Avocado, Caramelized Onions, Spinach, Hasbrown, House-made sauce"},
+        {"name": "BREKKIE ROCK N’ ROLL", "price": "$16.9", "description": "On Turkish, Bacon, Egg, Spinach, Avocado, Cheese, Hasbrown, House-made sauce"},
+        {"name": "I’M STARVING", "description": "2 Eggs of your choice, Sauteed Kale, Grilled Tomato Mushrooms, Avocado, Chorizo, Crispy Bacon, & Hashbrown w/ Sourdough"},
+        {"name": "BEST FRICKEN SANDWICH", "price": "$26.9", "description": "Buttermilk Fried Chicken, Pickles, Coleslaw, Jack-Cheese, Sriracha Hollandaise Sauce\nAdd Fries $3"},
+        {"name": "ACAI BOWL", "price": "$19.9", "description": "House-made Granola w/ Seasonal Fruits, Banana, Chia Seeds, and Coconut Flakes"},
+        {"name": "BEEF RENDANG", "price": "$23.9", "description": "House Slow Cooked Beef w/ Indo Spices, Broccoli, Pickled Cucumber, Onion & Chilli, Fried Egg, Crispy Shallot, Brown Rice"},
+        {"name": "AVO SMASH", "price": "$23.9", "description": "Avocado on Toast w/ Goat Feta, 2 Poached Eggs, Tomato Salsa, Dukkah, Sumac, Olive Oil\nAdd Crispy Bacon $4.5/Hashbrown 3.5"},
+        {"name": "EGGS BENEDICT", "price": "$19.9", "description": "Seasoned Pulled Beef, Sauteed Spinach, 2 Poached Eggs, Crispy Shallots, House Sriracha Hollandaise on Brioche"},
+        {"name": "CAULIFLOWER BOWL", "price": "$23.9", "description": "Fried Cauliflower, Quinoa, Almond, Pomegranate, Currant, Crispy Kale, Cumin Dressing, Beetroot Hummus, Avocado\nAdd Grilled Salmon $6.5/Grilled Chicken $5.5"},
+        {"name": "SOBA SALMON BOWL", "price": "$21.9", "description": "Cold Soba Noodles w/ Sesame Dressing, Pickle Cucumber, Soy Beansprout, Avocado, Edamame, Bonito Flakes, and Ponzu Grilled Salmon"},
+        {"name": "CHILLY BILLY", "price": "$24.9", "description": "Soft Scrambled Eggs w/Zenius Chilli Sambal, Mix Mushrooms, Goat Feta, Crispy Shallots and Roti Paratha"},
+        {"name": "PANCAKE", "price": "$22.9", "description": "Pandan Pancake, Banana, Seasonal Fruits, Roasted Pistachio, Maple Syrup and Rainbow Ice Cream"},
+        {"name": "GREEN BOWL", "price": "$21.9", "description": "Sauteed Quinoa, Red Onion, Broccoli, Asparagus, Kale, Labneh, Poached Egg, House Spiced Almond Nuts, Edamame\nGrilled Salmon/Grilled Chicken $5.5"}
+    ],
     "coffee-hot-drinks": [
         {"name": "BLACK", "price": "$4.5/$5"},
         {"name": "WHITE", "price": "$4.5/$5"},
