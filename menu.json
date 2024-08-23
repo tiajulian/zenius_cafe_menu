@@ -1,0 +1,42 @@
+{
+  "coffee": [
+    {
+      "name": "BLACK",
+      "price": "$4.00",
+      "description": "A classic black coffee brewed to perfection, rich and bold."
+    },
+    {
+      "name": "WHITE",
+      "price": "$4.00",
+      "description": "Smooth and creamy, a perfect blend of espresso and steamed milk."
+    },
+    {
+      "name": "MOCHA",
+      "price": "$4.50",
+      "description": "A delightful mix of espresso, chocolate, and steamed milk."
+    }
+    // Add more coffee items here
+  ],
+  "tea": [
+    {
+      "name": "EARL GREY",
+      "price": "$3.50",
+      "description": "A robust black tea with the distinctive flavor of bergamot."
+    },
+    {
+      "name": "ENGLISH BREAKFAST",
+      "price": "$3.50",
+      "description": "A full-bodied black tea, perfect for starting your day."
+    }
+    // Add more tea items here
+  ],
+  "beverages": [
+    {
+      "name": "MILKSHAKE - CHOCOLATE",
+      "price": "$5.00",
+      "description": "Rich and creamy, made with premium chocolate ice cream."
+    }
+    // Add more beverage items here
+  ]
+  // Add more categories as needed
+}
