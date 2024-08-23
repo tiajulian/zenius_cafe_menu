@@ -5,13 +5,24 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show the popup
     popup.classList.add('show');
 
-    closeBtn.onclick = function() {
-        popup.classList.remove('show');
+    // Debugging: Log to ensure elements are selected
+    console.log('Popup:', popup);
+    console.log('Close Button:', closeBtn);
+
+    // Check if close button exists and is working
+    if (closeBtn) {
+        closeBtn.onclick = function() {
+            console.log('Close button clicked');
+            popup.classList.remove('show');
+        };
+    } else {
+        console.error('Close button not found');
     }
 
+    // Close the popup if clicking outside of it
     window.onclick = function(event) {
-        if (event.target == popup) {
+        if (event.target === popup) {
             popup.classList.remove('show');
         }
-    }
+    };
 });
