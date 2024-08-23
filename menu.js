@@ -21,14 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     itemName.textContent = item.name;
                     itemDiv.appendChild(itemName);
 
-                    const itemPrice = document.createElement('p');
-                    itemPrice.textContent = item.price;
-                    itemDiv.appendChild(itemPrice);
-
                     if (item.description) {
                         const itemDescription = document.createElement('p');
                         itemDescription.textContent = item.description;
                         itemDiv.appendChild(itemDescription);
+                    }
+
+                    if (item.price) {
+                        const itemPrice = document.createElement('p');
+                        itemPrice.classList.add('price'); // Add class for styling
+                        itemPrice.textContent = item.price;
+                        itemDiv.appendChild(itemPrice);
                     }
 
                     section.appendChild(itemDiv);
