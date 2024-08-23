@@ -152,6 +152,10 @@ body {
     font-size: 1.2em;
 }
 
+.close-btn:hover {
+    background: #cc0000; /* Darker red on hover */
+}
+
 /* Darken navbar when popup is active */
 .body-popup-active .menu-categories {
     background-color: #d7ccc8; /* Darker greyish background */
