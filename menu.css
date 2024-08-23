@@ -36,6 +36,12 @@ body {
     z-index: 1000; /* Ensures it stays above other content */
     border-bottom: 1px solid #ffcdd2; /* Light orange border for contrast */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Darken navbar when popup is active */
+.body-popup-active .menu-categories {
+    background-color: #d7ccc8; /* Darker greyish background */
 }
 
 .menu-categories ul {
