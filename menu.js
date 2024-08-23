@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     // Fetch and display menu items
     fetch('menu.json')
