@@ -124,20 +124,20 @@ body {
 }
 
 .popup-message .popup-content {
-    background: white;
+    background: #ffffff; /* White background for the content */
     padding: 30px;
     border-radius: 12px; /* Rounded corners for a softer look */
     width: 90%;
     max-width: 600px; /* Maximum width for larger screens */
     position: relative;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
     text-align: center;
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition effects */
     transform: scale(0.9); /* Initial scale for entrance effect */
     opacity: 0; /* Initial opacity for entrance effect */
 }
 
-.popup-message .show .popup-content {
+.popup-message.show .popup-content {
     transform: scale(1); /* Full scale when visible */
     opacity: 1; /* Full opacity when visible */
 }
