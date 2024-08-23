@@ -111,9 +111,8 @@ body {
 }
 
 /* Pop-up styles */
-/* Popup Styles */
 .popup-message {
-    display: none; /* Hidden by default */
+    display: flex; /* Ensure the pop-up is displayed as flex */
     position: fixed;
     top: 0;
     left: 0;
@@ -122,16 +121,15 @@ body {
     background: rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
+    z-index: 2000; /* Make sure it’s above other content */
 }
 
-.popup-message.show {
-    display: flex; /* Show when 'show' class is added */
-}
-
-.popup-content {
+.popup-message .popup-content {
     background: white;
     padding: 20px;
     border-radius: 5px;
+    width: 90%;
+    max-width: 500px; /* Adjust maximum width as needed */
 }
 
 .close-btn {
@@ -140,13 +138,15 @@ body {
     border: none;
     padding: 10px;
     cursor: pointer;
+    position: absolute; /* Position the button within the popup */
+    top: 10px;
+    right: 10px;
 }
 
 /* Body Styling When Popup is Active */
 .body-popup-active {
-    overflow: hidden; /* Example of what might be done to the body */
+    overflow: hidden; /* Prevent scrolling on the body */
 }
-
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
