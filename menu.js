@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 section.classList.add('menu-section');
 
                 const heading = document.createElement('h2');
-                heading.textContent = capitalizeFirstLetter(category);
+                heading.textContent = capitalizeFirstLetter(category.replace(/-/g, ' '));
                 section.appendChild(heading);
 
                 data[category].forEach(item => {
@@ -25,9 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     itemPrice.textContent = item.price;
                     itemDiv.appendChild(itemPrice);
 
-                    const itemDescription = document.createElement('p');
-                    itemDescription.textContent = item.description;
-                    itemDiv.appendChild(itemDescription);
+                    if (item.description) {
+                        const itemDescription = document.createElement('p');
+                        itemDescription.textContent = item.description;
+                        itemDiv.appendChild(itemDescription);
+                    }
 
                     section.appendChild(itemDiv);
                 });
