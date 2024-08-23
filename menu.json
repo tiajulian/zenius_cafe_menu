@@ -3,104 +3,104 @@
         {
             "name": "TOAST",
             "description": "Sourdough, Multigrain, Turkish, Gluten Free. Choice of Spread: Strawberry Jam, Peanut Butter, Nutella, Vegemite.",
-            "price": "$5.9"
+            "price": "$5.90"
         },
         {
             "name": "THE SECRET CORN",
-            "description": "House Sweet Corn Mix Haloumi Fritters, Avocado, Poached Egg, Tomato Salsa & Green Goddess Dressing. Add side of Crispy Bacon $4.5.",
-            "price": "$21.9"
+            "description": "House Sweet Corn Mix Haloumi Fritters, Avocado, Poached Egg, Tomato Salsa & Green Goddess Dressing. Add side of Crispy Bacon $4.50.",
+            "price": "$21.90"
         },
         {
             "name": "SAY HALOU-MI",
             "description": "On Turkish bread, Haloumi, Egg, Avocado, Caramelized Onions, Spinach, Hashbrown, House-made sauce.",
-            "price": "$16.9"
+            "price": "$16.90"
         },
         {
             "name": "BREKKIE ROCK N’ ROLL",
             "description": "On Turkish bread, Bacon, Egg, Spinach, Avocado, Cheese, Hashbrown, House-made sauce.",
-            "price": "$16.9"
+            "price": "$16.90"
         },
         {
             "name": "I’M STARVING",
             "description": "2 Eggs of your choice, Sauteed Kale, Grilled Tomato, Mushrooms, Avocado, Chorizo, Crispy Bacon, & Hashbrown with Sourdough.",
-            "price": null
+            "price": "Varies"
         },
         {
             "name": "BEST FRICKEN SANDWICH",
             "description": "Buttermilk Fried Chicken, Pickles, Coleslaw, Jack Cheese, Sriracha Hollandaise Sauce. Add Fries $3.",
-            "price": "$26.9"
+            "price": "$26.90"
         },
         {
             "name": "ACAI BOWL",
             "description": "House-made Granola with Seasonal Fruits, Banana, Chia Seeds, and Coconut Flakes.",
-            "price": "$19.9"
+            "price": "$19.90"
         },
         {
             "name": "BEEF RENDANG",
             "description": "House Slow Cooked Beef with Indo Spices, Broccoli, Pickled Cucumber, Onion & Chilli, Fried Egg, Crispy Shallot, Brown Rice.",
-            "price": "$23.9"
+            "price": "$23.90"
         },
         {
             "name": "AVO SMASH",
-            "description": "Avocado on Toast with Goat Feta, 2 Poached Eggs, Tomato Salsa, Dukkah, Sumac, Olive Oil. Add Crispy Bacon $4.5 or Hashbrown $3.5.",
-            "price": "$23.9"
+            "description": "Avocado on Toast with Goat Feta, 2 Poached Eggs, Tomato Salsa, Dukkah, Sumac, Olive Oil. Add Crispy Bacon $4.50 or Hashbrown $3.50.",
+            "price": "$23.90"
         },
         {
             "name": "EGGS BENEDICT",
             "description": "Seasoned Pulled Beef, Sauteed Spinach, 2 Poached Eggs, Crispy Shallots, House Sriracha Hollandaise on Brioche.",
-            "price": "$19.9"
+            "price": "$19.90"
         },
         {
             "name": "CAULIFLOWER BOWL",
-            "description": "Fried Cauliflower, Quinoa, Almond, Pomegranate, Currant, Crispy Kale, Cumin Dressing, Beetroot Hummus, Avocado. Add Grilled Salmon $6.5 or Grilled Chicken $5.5.",
-            "price": "$23.9"
+            "description": "Fried Cauliflower, Quinoa, Almond, Pomegranate, Currant, Crispy Kale, Cumin Dressing, Beetroot Hummus, Avocado. Add Grilled Salmon $6.50 or Grilled Chicken $5.50.",
+            "price": "$23.90"
         },
         {
             "name": "SOBA SALMON BOWL",
             "description": "Cold Soba Noodles with Sesame Dressing, Pickled Cucumber, Soy Beansprout, Avocado, Edamame, Bonito Flakes, and Ponzu Grilled Salmon.",
-            "price": "$21.9"
+            "price": "$21.90"
         },
         {
             "name": "CHILLY BILLY",
             "description": "Soft Scrambled Eggs with Zenius Chilli Sambal, Mixed Mushrooms, Goat Feta, Crispy Shallots, and Roti Paratha.",
-            "price": "$24.9"
+            "price": "$24.90"
         },
         {
             "name": "PANCAKE",
             "description": "Pandan Pancake, Banana, Seasonal Fruits, Roasted Pistachio, Maple Syrup, and Rainbow Ice Cream.",
-            "price": "$22.9"
+            "price": "$22.90"
         },
         {
             "name": "GREEN BOWL",
-            "description": "Sauteed Quinoa, Red Onion, Broccoli, Asparagus, Kale, Labneh, Poached Egg, House Spiced Almond Nuts, Edamame. Add Grilled Salmon or Grilled Chicken $5.5.",
-            "price": "$21.9"
+            "description": "Sauteed Quinoa, Red Onion, Broccoli, Asparagus, Kale, Labneh, Poached Egg, House Spiced Almond Nuts, Edamame. Add Grilled Salmon or Grilled Chicken $5.50.",
+            "price": "$21.90"
         }
     ],
     "sides": [
-        {"name": "Mix Mushrooms", "description": null, "price": "$4.5"},
-        {"name": "Goat Feta", "description": null, "price": "$4.5"},
-        {"name": "Chorizo", "description": null, "price": "$4.5"},
-        {"name": "Bacon", "description": null, "price": "$4.5"},
-        {"name": "Avocado", "description": null, "price": "$4.5"},
-        {"name": "Halloumi", "description": null, "price": "$4.5"},
-        {"name": "Egg", "description": null, "price": "$3.5"},
-        {"name": "Cheese", "description": null, "price": "$3.5"},
-        {"name": "Grilled Tomato", "description": null, "price": "$3.5"},
-        {"name": "Wilted Spinach", "description": null, "price": "$3.5"},
-        {"name": "Hashbrown", "description": null, "price": "$3.5"},
-        {"name": "Grilled Salmon", "description": null, "price": "$7"},
-        {"name": "Grilled Chicken", "description": null, "price": "$7"},
-        {"name": "Seasoned Fried Chicken", "description": null, "price": "$7"},
-        {"name": "Fries with Herbs", "description": null, "price": "$7"},
-        {"name": "Sweet Potato Fries", "description": null, "price": "$9"}
+        {"name": "Mix Mushrooms", "description": null, "price": "$4.50"},
+        {"name": "Goat Feta", "description": null, "price": "$4.50"},
+        {"name": "Chorizo", "description": null, "price": "$4.50"},
+        {"name": "Bacon", "description": null, "price": "$4.50"},
+        {"name": "Avocado", "description": null, "price": "$4.50"},
+        {"name": "Halloumi", "description": null, "price": "$4.50"},
+        {"name": "Egg", "description": null, "price": "$3.50"},
+        {"name": "Cheese", "description": null, "price": "$3.50"},
+        {"name": "Grilled Tomato", "description": null, "price": "$3.50"},
+        {"name": "Wilted Spinach", "description": null, "price": "$3.50"},
+        {"name": "Hashbrown", "description": null, "price": "$3.50"},
+        {"name": "Grilled Salmon", "description": null, "price": "$7.00"},
+        {"name": "Grilled Chicken", "description": null, "price": "$7.00"},
+        {"name": "Seasoned Fried Chicken", "description": null, "price": "$7.00"},
+        {"name": "Fries with Herbs", "description": null, "price": "$7.00"},
+        {"name": "Sweet Potato Fries", "description": null, "price": "$9.00"}
     ],
     "coffee-hot-drinks": [
-        {"name": "BLACK", "description": null, "price": "$4.5/$5"},
-        {"name": "WHITE", "description": null, "price": "$4.5/$5"},
-        {"name": "HOT CHOCOLATE", "description": null, "price": "$4.5/$5"},
-        {"name": "CHAI", "description": null, "price": "$4.5/$5"},
-        {"name": "DIRTY CHAI", "description": null, "price": "$5/$5.5"},
-        {"name": "MOCHA", "description": null, "price": "$5/$5.5"},
+        {"name": "BLACK", "description": null, "price": "$4.50/$5.00"},
+        {"name": "WHITE", "description": null, "price": "$4.50/$5.00"},
+        {"name": "HOT CHOCOLATE", "description": null, "price": "$4.50/$5.00"},
+        {"name": "CHAI", "description": null, "price": "$4.50/$5.00"},
+        {"name": "DIRTY CHAI", "description": null, "price": "$5.00/$5.50"},
+        {"name": "MOCHA", "description": null, "price": "$5.00/$5.50"},
         {"name": "STICKY CHAI ON SOY", "description": null, "price": "$6.00"},
         {"name": "TARO LATTE", "description": null, "price": "$6.00"},
         {"name": "RED VELVET LATTE", "description": null, "price": "$6.00"},
@@ -108,48 +108,46 @@
         {"name": "AFFOGATO", "description": null, "price": "$6.00"}
     ],
     "tea": [
-        {"name": "EARL GREY", "description": null, "price": "$4.5"},
-        {"name": "ENGLISH BREAKFAST", "description": null, "price": "$4.5"},
-        {"name": "GREEN", "description": null, "price": "$4.5"},
-        {"name": "PEPPERMINT", "description": null, "price": "$4.5"},
-        {"name": "CHAMOMILE", "description": null, "price": "$4.5"},
-        {"name": "LEMONGRASS GINGER", "description": null, "price": "$4.5"},
-        {"name": "PURE MATCHA", "description": "Available sweet or not sweet. HOT/ICED", "price": "$6"},
-        {"name": "STRAWBERRY MATCHA", "description": "HOT $6, ICED $7", "price": "$12"}
+        {"name": "EARL GREY", "description": null, "price": "$4.50"},
+        {"name": "ENGLISH BREAKFAST", "description": null, "price": "$4.50"},
+        {"name": "GREEN", "description": null, "price": "$4.50"},
+        {"name": "PEPPERMINT", "description": null, "price": "$4.50"},
+        {"name": "CHAMOMILE", "description": null, "price": "$4.50"},
+        {"name": "LEMONGRASS GINGER", "description": null, "price": "$4.50"},
+        {"name": "PURE MATCHA", "description": "Available sweet or not sweet. HOT/ICED", "price": "$6.00"},
+        {"name": "STRAWBERRY MATCHA", "description": "HOT $6.00, ICED $7.00", "price": "$7.00"}
     ],
     "pure-matcha": [
-        {"name": "HOT", "description": "Available sweet/not sweet", "price": "$6"},
-        {"name": "ICED", "description": "Available sweet/not sweet", "price": "7"},
-        {"name": "STRAWBERRY MATCHA", "description": "Available sweet/not sweet", "price": "$12"},
+        {"name": "HOT", "description": "Available sweet/not sweet", "price": "$6.00"},
+        {"name": "ICED", "description": "Available sweet/not sweet", "price": "$7.00"},
+        {"name": "STRAWBERRY MATCHA", "description": "Available sweet/not sweet", "price": "$12.00"}
     ],
     "iced": [
-        {"name": "COLD BREW", "description": null, "price": "$6.0"},
-        {"name": "ICE LATTE", "description": null, "price": "$6.0"},
-        {"name": "ICE LONG BLACK", "description": null, "price": "$6.0"},
-        {"name": "ICE MOCHA", "description": null, "price": "$7.0"},
-        {"name": "ICE CHOCOLATE", "description": null, "price": "$7.0"},
-        {"name": "ICE CHAI", "description": null, "price": "$7.0"},
-        {"name": "ICE TARO", "description": null, "price": "$7.0"}
+        {"name": "COLD BREW", "description": null, "price": "$6.00"},
+        {"name": "ICE LATTE", "description": null, "price": "$6.00"},
+        {"name": "ICE LONG BLACK", "description": null, "price": "$6.00"},
+        {"name": "ICE MOCHA", "description": null, "price": "$7.00"},
+        {"name": "ICE CHOCOLATE", "description": null, "price": "$7.00"},
+        {"name": "ICE CHAI", "description": null, "price": "$7.00"},
+        {"name": "ICE TARO", "description": null, "price": "$7.00"}
     ],
     "milkshake": [
-        {"name": "CHOCOLATE", "description": null, "price": "$6.5"},
-        {"name": "STRAWBERRY", "description": null, "price": "$6.5"},
-        {"name": "CARAMEL", "description": null, "price": "$6.5"},
-        {"name": "PEANUT BUTTER", "description": null, "price": "$6.5"},
-        {"name": "NUTELLA", "description": null, "price": "$6.5"}
+        {"name": "CHOCOLATE", "description": null, "price": "$6.50"},
+        {"name": "STRAWBERRY", "description": null, "price": "$6.50"},
+        {"name": "CARAMEL", "description": null, "price": "$6.50"},
+        {"name": "PEANUT BUTTER", "description": null, "price": "$6.50"},
+        {"name": "NUTELLA", "description": null, "price": "$6.50"}
     ],
     "fresh-juice": [
-        {"name": "IMMUNITY", "description": "Orange, Carrot, Apple, Ginger", "price": "$8"},
-        {"name": "DETOX", "description": "Cucumber, Celery, Apple, Lemon, Ginger", "price": "$8"},
-        {"name": "LIVER SCRUBBER", "description": "BEETROOT, APPLE, CARROT, LEMON", "price": "$8"}
+        {"name": "IMMUNITY", "description": "Orange, Carrot, Apple, Ginger", "price": "$8.00"},
+        {"name": "DETOX", "description": "Cucumber, Celery, Apple, Lemon, Ginger", "price": "$8.00"},
+        {"name": "LIVER SCRUBBER", "description": "Beetroot, Apple, Carrot, Lemon", "price": "$8.00"}
     ],
     "sodas": [
-        {"name": "STRAWBERRY WATERMELON", "description": null, "price": "$8"}
+        {"name": "STRAWBERRY WATERMELON", "description": null, "price": "$8.00"}
     ],
     "smoothie": [
-        {"name": "BANANA", "description": null, "price": "$9"},
-        {"name": "MIX BERRIES", "description": null, "price": "$9"}
-        
+        {"name": "BANANA", "description": null, "price": "$9.00"},
+        {"name": "MIX BERRIES", "description": null, "price": "$9.00"}
     ]
-    
 }
