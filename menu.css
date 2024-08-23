@@ -111,82 +111,61 @@ body {
 }
 /* Pop-up styles */
 .popup-message {
-    display: flex; /* Ensure the pop-up is displayed as flex */
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     align-items: center;
     justify-content: center;
-    z-index: 2000; /* Make sure it’s above other content */
+    z-index: 2000; /* Ensure it's on top of other content */
 }
 
-.popup-content {
+.popup-message .popup-content {
     background: white;
-    padding: 30px; /* Increased padding for more space */
-    border-radius: 15px; /* Rounded corners for a softer look */
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners for a softer look */
     width: 90%;
-    max-width: 600px; /* Slightly larger max-width */
-    position: relative; /* Relative positioning for close button */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-    text-align: center; /* Centered text for better readability */
+    max-width: 600px; /* Maximum width for larger screens */
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition effects */
+    transform: scale(0.9); /* Initial scale for entrance effect */
+    opacity: 0; /* Initial opacity for entrance effect */
 }
 
-.popup-content h2 {
-    font-size: 1.8em; /* Larger font size for title */
-    margin: 0 0 20px; /* Space below the title */
-    color: #bf360c; /* Darker orange color */
-}
-
-.popup-content p {
-    margin: 10px 0; /* Space between paragraphs */
-    font-size: 1.1em; /* Slightly larger font size for content */
-    color: #333333; /* Neutral dark gray color */
+.popup-message .show .popup-content {
+    transform: scale(1); /* Full scale when visible */
+    opacity: 1; /* Full opacity when visible */
 }
 
 .close-btn {
-    background: #bf360c; /* Darker orange background for button */
+    background: #ff4d4d; /* Red background for visibility */
     color: white;
     border: none;
-    padding: 12px 18px; /* Increased padding for better touch targets */
+    padding: 12px;
     cursor: pointer;
-    position: absolute; /* Position the button within the popup */
+    position: absolute;
     top: 15px;
     right: 15px;
     border-radius: 50%; /* Circular button */
-    font-size: 1.5em; /* Larger font size */
-    line-height: 1; /* Adjust line height */
-    transition: background 0.3s ease, transform 0.3s ease; /* Smooth background and transform transition */
+    font-size: 1.2em; /* Larger font size for better visibility */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 .close-btn:hover {
-    background: #d32f2f; /* Darker red on hover */
-    transform: scale(1.1); /* Slightly enlarge button on hover */
-}
-
-/* Body Styling When Popup is Active */
-.body-popup-active {
-    overflow: hidden; /* Prevent scrolling on the body */
+    background: #cc0000; /* Darker red on hover */
 }
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
-    .popup-content {
-        padding: 20px; /* Adjust padding for mobile */
-        max-width: 90%; /* Adjust maximum width for smaller screens */
-    }
-
-    .popup-content h2 {
-        font-size: 1.5em; /* Adjust font size for mobile */
-    }
-
-    .popup-content p {
-        font-size: 1em; /* Adjust font size for mobile */
+    .popup-message .popup-content {
+        width: 95%; /* Slightly larger width on mobile */
     }
 }
-
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
