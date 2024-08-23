@@ -109,6 +109,7 @@ body {
 .menu-item .price {
     font-weight: bold; /* Makes the price bold */
 }
+
 /* Pop-up styles */
 .popup-message {
     display: flex;
@@ -165,10 +166,7 @@ body {
     .popup-message .popup-content {
         width: 95%; /* Slightly larger width on mobile */
     }
-}
 
-/* Mobile-specific styles */
-@media (max-width: 768px) {
     .menu-title {
         font-size: 1.6em; /* Adjusted font size for mobile view */
     }
