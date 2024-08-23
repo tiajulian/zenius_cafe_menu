@@ -7,6 +7,26 @@ body {
     color: #333333; /* Neutral dark gray for text */
 }
 
+.sides-button-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.sides-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
 /* Header styles */
 .header {
     text-align: center;
