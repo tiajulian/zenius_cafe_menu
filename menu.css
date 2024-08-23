@@ -13,13 +13,13 @@ body {
 /* Header styles */
 .header {
     text-align: center;
-    padding: 0.8em 0; /* Reduced padding */
-    background-color: #ffebee; /* Very light orange background */
-    border-bottom: 2px solid #ffcdd2; /* Slightly darker orange border for contrast */
+    padding: 1em 0; /* Adjusted padding for better spacing */
+    background-color: #ffebee; /* Very light pink background */
+    border-bottom: 2px solid #ffcdd2; /* Slightly darker pink border for contrast */
 }
 
 .menu-title {
-    font-size: 1.8em; /* Smaller font size for the title */
+    font-size: 2em; /* Adjusted font size for the title */
     color: #bf360c; /* Darker orange text color */
     margin: 0;
 }
@@ -29,7 +29,7 @@ body {
     position: sticky; /* Make nav sticky */
     top: 0; /* Stick to the top */
     background-color: #fff3e0; /* Very light peach background */
-    padding: 8px; /* Reduced padding */
+    padding: 10px; /* Adjusted padding for better spacing */
     overflow-x: auto; /* Enables horizontal scrolling */
     white-space: nowrap; /* Prevents wrapping of items */
     -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
@@ -44,11 +44,10 @@ body {
     margin: 0; /* Removes default margin */
     display: flex; /* Aligns items horizontally */
     align-items: center; /* Centers items vertically within the nav */
-    flex-wrap: nowrap; /* Prevents wrapping of items */
 }
 
 .menu-categories li {
-    margin-right: 15px; /* Reduced space between items */
+    margin-right: 15px; /* Space between items */
 }
 
 .menu-categories li:last-child {
@@ -60,8 +59,7 @@ body {
     text-decoration: none;
     font-weight: bold; /* Makes text bold */
     display: inline-block; /* Ensures links are displayed inline */
-    padding: 10px 15px; /* Reduced padding */
-    font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+    padding: 10px 15px; /* Padding for better touch targets */
 }
 
 .menu-categories a:hover {
@@ -71,20 +69,20 @@ body {
 
 /* Menu section styles */
 .menu-section {
-    padding: 0.8em; /* Reduced padding */
+    padding: 1em; /* Adjusted padding for better spacing */
     border-bottom: 1px solid #ffcdd2; /* Light orange border */
 }
 
 .menu-section h2 {
-    font-size: 1.4em; /* Smaller font size for headings */
+    font-size: 1.6em; /* Adjusted font size for headings */
     margin-bottom: 0.5em;
     color: #bf360c; /* Darker orange */
 }
 
 /* Menu item box styles */
 .menu-item {
-    margin-bottom: 0.8em; /* Reduced space between items */
-    padding: 0.8em; /* Reduced padding */
+    margin-bottom: 1em; /* Space between items */
+    padding: 1em; /* Padding for better spacing */
     border: 1px solid #ffccbc; /* Light orange border for the box */
     border-radius: 8px; /* Rounded corners */
     background-color: #ffe0b2; /* Very light orange background for the box */
@@ -93,7 +91,7 @@ body {
 
 .menu-item h3 {
     margin: 0 0 0.5em;
-    font-size: 1em; /* Smaller font size for item titles */
+    font-size: 1.2em; /* Adjusted font size for item titles */
     color: #bf360c; /* Darker orange text */
 }
 
@@ -105,8 +103,10 @@ body {
 .menu-item .price {
     font-weight: bold; /* Makes the price bold */
 }
+
+/* Pop-up styles */
 .popup {
-    display: flex;
+    display: none; /* Hidden by default */
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -116,6 +116,10 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     z-index: 1000; /* Ensure it's on top */
+}
+
+.popup.show {
+    display: flex; /* Show the popup when the show class is added */
 }
 
 .popup-content {
@@ -155,22 +159,22 @@ body {
 /* Mobile-specific styles */
 @media (max-width: 768px) {
     .menu-title {
-        font-size: 1.4em; /* Further reduced font size for mobile view */
+        font-size: 1.6em; /* Adjusted font size for mobile view */
     }
 
     .menu-categories {
-        padding: 6px; /* Further reduced padding */
+        padding: 8px; /* Adjusted padding for mobile */
     }
 
     .menu-categories a {
-        padding: 8px 12px; /* Further reduced padding */
+        padding: 8px 12px; /* Adjusted padding for mobile */
     }
 
     .menu-section h2 {
-        font-size: 1.2em; /* Further reduced font size for headings on mobile */
+        font-size: 1.4em; /* Adjusted font size for headings on mobile */
     }
 
     .menu-item h3 {
-        font-size: 0.9em; /* Further reduced font size for item titles on mobile */
+        font-size: 1em; /* Adjusted font size for item titles on mobile */
     }
 }
