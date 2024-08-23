@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
 
     function closePopup() {
-        popup.classList.remove('show');
-        body.classList.remove('body-popup-active');
+        popup.classList.remove('show'); // Hides the pop-up
+        body.classList.remove('body-popup-active'); // Reverts the body's active state
     }
 
     // Show the popup
-    popup.classList.add('show');
-    body.classList.add('body-popup-active');
+    popup.classList.add('show'); // Displays the pop-up
+    body.classList.add('body-popup-active'); // Adds the active state to the body
 
     if (closeBtn) {
         closeBtn.onclick = closePopup;
