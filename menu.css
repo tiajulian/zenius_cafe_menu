@@ -1,4 +1,3 @@
-
 /* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
@@ -125,7 +124,7 @@ body {
     z-index: 2000; /* Ensure it's on top of other content */
 }
 
-.popup-message .popup-content {
+.popup-content {
     background: #ffffff; /* White background for the content */
     padding: 30px;
     border-radius: 12px; /* Rounded corners for a softer look */
@@ -164,7 +163,7 @@ body {
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
-    .popup-message .popup-content {
+    .popup-content {
         width: 95%; /* Slightly larger width on mobile */
     }
 
