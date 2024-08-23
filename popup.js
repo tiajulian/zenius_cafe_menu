@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById('popup-message');
     const closeBtn = document.querySelector('.close-btn');
