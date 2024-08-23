@@ -67,7 +67,7 @@
 
 
         {
-            "name": "CAULIFLOWER BOWL",
+            "name": "CAULIFLOWER BOWL (GF)",
             "description": "Fried Cauliflower, Quinoa, Almond, Pomegranate, Currant, Crispy Kale, Cumin Dressing, Beetroot Hummus, Avocado. Add Grilled Salmon $6.50 or Grilled Chicken $5.50.",
             "price": "$23.90"
         },
@@ -79,7 +79,7 @@
 
 
         {
-            "name": "GREEN BOWL",
+            "name": "GREEN BOWL (V,GF)",
             "description": "Sauteed Quinoa, Red Onion, Broccoli, Asparagus, Kale, Labneh, Poached Egg, House Spiced Almond Nuts, Edamame. Add Grilled Salmon or Grilled Chicken $5.50.",
             "price": "$21.90"
         }
