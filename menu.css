@@ -14,13 +14,13 @@ body {
 .header {
     text-align: center;
     padding: 0.8em 0; /* Reduced padding */
-    background-color: #e8f5e9; /* Light green background */
-    border-bottom: 2px solid #c8e6c9; /* Slightly darker green border for contrast */
+    background-color: #ffebee; /* Very light orange background */
+    border-bottom: 2px solid #ffcdd2; /* Slightly darker orange border for contrast */
 }
 
 .menu-title {
     font-size: 1.8em; /* Smaller font size for the title */
-    color: #4a4a4a; /* Darker gray text color */
+    color: #bf360c; /* Darker orange text color */
     margin: 0;
 }
 
@@ -28,13 +28,13 @@ body {
 .menu-categories {
     position: sticky; /* Make nav sticky */
     top: 0; /* Stick to the top */
-    background-color: #f0f4c3; /* Very light green background */
+    background-color: #fff3e0; /* Very light peach background */
     padding: 8px; /* Reduced padding */
     overflow-x: auto; /* Enables horizontal scrolling */
     white-space: nowrap; /* Prevents wrapping of items */
     -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
     z-index: 1000; /* Ensures it stays above other content */
-    border-bottom: 1px solid #c8e6c9; /* Light green border for contrast */
+    border-bottom: 1px solid #ffcdd2; /* Light orange border for contrast */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 .menu-categories a {
-    color: #4a4a4a; /* Darker gray text for contrast */
+    color: #bf360c; /* Darker orange text for contrast */
     text-decoration: none;
     font-weight: bold; /* Makes text bold */
     display: inline-block; /* Ensures links are displayed inline */
@@ -66,35 +66,35 @@ body {
 
 .menu-categories a:hover {
     text-decoration: underline; /* Adds underline on hover */
-    background-color: #c8e6c9; /* Light green background on hover */
+    background-color: #ffccbc; /* Light orange background on hover */
 }
 
 /* Menu section styles */
 .menu-section {
     padding: 0.8em; /* Reduced padding */
-    border-bottom: 1px solid #c8e6c9; /* Light green border */
+    border-bottom: 1px solid #ffcdd2; /* Light orange border */
 }
 
 .menu-section h2 {
     font-size: 1.4em; /* Smaller font size for headings */
     margin-bottom: 0.5em;
-    color: #4a4a4a; /* Darker gray */
+    color: #bf360c; /* Darker orange */
 }
 
 /* Menu item box styles */
 .menu-item {
     margin-bottom: 0.8em; /* Reduced space between items */
     padding: 0.8em; /* Reduced padding */
-    border: 1px solid #dcedc8; /* Light green border for the box */
+    border: 1px solid #ffccbc; /* Light orange border for the box */
     border-radius: 8px; /* Rounded corners */
-    background-color: #f9fbe7; /* Very light yellow-green background for the box */
+    background-color: #ffe0b2; /* Very light orange background for the box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .menu-item h3 {
     margin: 0 0 0.5em;
     font-size: 1em; /* Smaller font size for item titles */
-    color: #4a4a4a; /* Darker gray text */
+    color: #bf360c; /* Darker orange text */
 }
 
 .menu-item p {
