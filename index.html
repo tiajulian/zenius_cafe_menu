@@ -1,26 +1,55 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById('popup-message');
-    const closeBtn = document.querySelector('.close-btn');
-    const body = document.body;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Pop-up Message -->
+<div id="popup-message" class="popup-message">
+    <div class="popup-content">
+        <button class="close-btn">&times;</button>
+        <h2>Welcome to Zenius Cafe!</h2>
+        <p>MENU ITEM COULD NOT BE SUBTITUTE.</p>
+        <p>Follow our Instagram @ZENIUSCOFFEE</p>
+        <p>PHONE: 0289578415</p>
+        <p>10% SURCHARGE ON WEEKENDS</p>
+        <p>15% SURCHARGE ON PUBLIC HOLIDAY</p>
+    </div>
+</div>
+    
 
-    function closePopup() {
-        popup.classList.remove('show'); // Hides the pop-up
-        body.classList.remove('body-popup-active'); // Reverts the body's active state
-    }
+    <!-- Header -->
+    <header class="header">
+        <h1 class="menu-title">ZENIUS</h1>
+    </header>
 
-    // Show the popup
-    popup.classList.add('show'); // Displays the pop-up
-    body.classList.add('body-popup-active'); // Adds the active state to the body
+    <!-- Navigation Menu -->
+    <nav class="menu-categories">
+        <ul>
+            <li><a href="#food">Foods</a></li>
+            <li><a href="#sides">Sides</a></li>
+            <li><a href="#coffee-hot-drinks">Coffee / Hot Drinks</a></li>
+            <li><a href="#tea">Tea</a></li>
+            <li><a href="#pure-matcha">Pure Matcha</a></li>
+            <li><a href="#iced">Iced</a></li>
+            <li><a href="#milkshake">Milkshake</a></li>
+            <li><a href="#fresh-juice">Fresh Juice</a></li>
+            <li><a href="#smoothie">Smoothie</a></li>
+            <li><a href="#sodas">Sodas</a></li>
+        </ul>
+    </nav>
 
-    if (closeBtn) {
-        closeBtn.onclick = closePopup;
-    } else {
-        console.error('Close button not found');
-    }
+    <!-- Menu Content -->
+    <main class="menu-content">
+        <div id="menu-container"></div>
+    </main>
 
-    window.onclick = function(event) {
-        if (event.target === popup) {
-            closePopup();
-        }
-    };
-});
+    <!-- JavaScript Files -->
+    <script src="menu.js" type="module"></script>
+    <script src="popup.js" type="module"></script>
+</body>
+</html>
